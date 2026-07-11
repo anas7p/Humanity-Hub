@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact &amp; Resources — Humanity Hub</title>
+<meta name="description" content="Organizations that can help, emergency numbers, UTM location map, and a hardened contact form." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body id="top">
+<header class="site-header compact">
+  <div class="bg-orbs" aria-hidden="true"><span class="orb orb-1"></span><span class="orb orb-2"></span><span class="orb orb-3"></span></div>
+  <nav class="navbar" aria-label="Primary">
+    <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 28S4 20 4 12a6 6 0 0 1 12-2 6 6 0 0 1 12 2c0 8-12 16-12 16Z" fill="currentColor"/></svg></span><span>Humanity <em>Hub</em></span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="poverty.html">Poverty</a></li>
+      <li><a href="war.html">War &amp; Conflict</a></li>
+      <li><a href="climate.html">Climate Change</a></li>
+      <li><a href="cyberbullying.html">Cyberbullying</a></li>
+      <li><a href="mental-health.html">Mental Health</a></li>
+      <li><a href="contact.html" class="nav-cta active">Contact / Resources</a></li>
+    </ul>
+  </nav>
+  <div class="page-hero">
+    <span class="tag">Resources &amp; Contact</span>
+    <h1>Help, hotlines &amp; how to connect</h1>
+    <p class="lead">Reach out directly via email at <a href="mailto:aprodhan244@gmail.com" style="text-decoration:underline;">aprodhan244@gmail.com</a> or use our secure feedback form.</p>
+  </div>
+</header>
+<main>
+<section class="section">
+  <div class="cards">
+    <a class="card" href="https://www.unicef.org" target="_blank" rel="noopener"><h3>UNICEF</h3><p>Children's rights, education and emergency aid worldwide.</p></a>
+    <a class="card" href="https://www.who.int" target="_blank" rel="noopener"><h3>WHO</h3><p>Global health information and mental health resources.</p></a>
+    <a class="card" href="https://www.bbc.com/news/world" target="_blank" rel="noopener"><h3>BBC World News</h3><p>Stay informed on global humanitarian developments.</p></a>
+    <a class="card emergency" href="tel:112"><h3>Emergency: 112 / 911</h3><p>If you or someone is in immediate danger, call now.</p></a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head center">
+    <span class="tag">Location</span>
+    <h2>University of Technology, Mauritius (UTM)</h2>
+    <p class="lead">Our physical campus base in La Tour Koenig, Pointe aux Sables.</p>
+  </div>
+  <div style="border-radius:12px; overflow:hidden; border:1px solid rgba(255,255,255,0.1); margin-top:2rem;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.8340156942173!2d57.47154231530896!3d-20.18342498646193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c504a331165a1%3A0xe5dbdfbdaabcf2f0!2sUniversity%20of%20Technology%2C%20Mauritius!5e0!3m2!1sen!2smu!4v1700000000000!5m2!1sen!2smu" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <span class="tag">Secure Form</span>
+    <h2>Share your voice (XSS &amp; Injection Protected)</h2>
+    <p class="lead">This form uses client-side regex validation and strict HTML entity encoding to prevent Cross-Site Scripting (XSS).</p>
+  </div>
+  <form class="contact-form" id="secure-form" novalidate>
+    <label>Name <input type="text" id="fname" name="name" required maxlength="50" placeholder="John Doe" /></label>
+    <label>Email <input type="email" id="femail" name="email" required placeholder="aprodhan244@gmail.com" /></label>
+    <label class="full">Message <textarea id="fmsg" name="message" rows="5" required maxlength="500" placeholder="Type your message here..."></textarea></label>
+    <button type="submit" class="btn btn-primary">Send Secure Message</button>
+    <div id="form-feedback" style="margin-top:1rem; font-weight:600;" aria-live="polite"></div>
+  </form>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div><div class="brand brand-footer"><span>Humanity <em>Hub</em></span></div><p class="muted">UTM Mauritius — Coursework Project.</p><p><a href="mailto:aprodhan244@gmail.com">aprodhan244@gmail.com</a></p></div>
+    <div><h4>Explore</h4><ul><li><a href="poverty.html">Poverty</a></li><li><a href="war.html">War</a></li><li><a href="climate.html">Climate</a></li><li><a href="cyberbullying.html">Cyberbullying</a></li><li><a href="mental-health.html">Mental Health</a></li></ul></div>
+    <div><h4>Help</h4><ul><li><a href="contact.html">Resources</a></li><li><a href="about.html">About Us</a></li><li><a href="faq.html">FAQ</a></li><li><a href="testimonials.html">Testimonials</a></li></ul></div>
+  </div>
+  <div style="text-align:center; margin-top:2rem;"><a href="#top" class="btn btn-ghost btn-sm">↑ Back to top</a></div>
+  <p class="copyright">© <span id="year"></span> Humanity Hub — made by Anas P.</p>
+</footer>
+
+<script>
+document.getElementById('secure-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const nameInput = document.getElementById('fname').value.trim();
+  const emailInput = document.getElementById('femail').value.trim();
+  const msgInput = document.getElementById('fmsg').value.trim();
+  const feedback = document.getElementById('form-feedback');
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!nameInput || !emailInput || !msgInput) {
+    feedback.style.color = '#ff6b6b';
+    feedback.textContent = 'Error: All fields are required.';
+    return;
+  }
+  if (!emailRegex.test(emailInput)) {
+    feedback.style.color = '#ff6b6b';
+    feedback.textContent = 'Error: Please enter a valid email address.';
+    return;
+  }
+
+  function sanitizeInput(str) {
+    return str.replace(/&/g, '&amp;')
+              .replace(/</g, '&lt;')
+              .replace(/>/g, '&gt;')
+              .replace(/"/g, '&quot;')
+              .replace(/'/g, '&#039;');
+  }
+
+  const cleanName = sanitizeInput(nameInput);
+  
+  feedback.style.color = '#51cf66';
+  feedback.textContent = `Success! Thank you, ${cleanName}. Your message has been safely sanitized and verified.`;
+  this.reset();
+});
+</script>
+<script src="../js/script.js"></script>
+</body>
+</html>

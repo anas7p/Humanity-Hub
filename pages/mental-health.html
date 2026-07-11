@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mental Health — Humanity Hub</title>
+<meta name="description" content="A page about anxiety, depression and student stress, with a breathing exercise and a quote button I added." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<header class="site-header compact accent-mind" id="top">
+  <div class="bg-orbs" aria-hidden="true"><span class="orb orb-1"></span><span class="orb orb-2"></span><span class="orb orb-3"></span></div>
+  <nav class="navbar" aria-label="Primary">
+    <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 28S4 20 4 12a6 6 0 0 1 12-2 6 6 0 0 1 12 2c0 8-12 16-12 16Z" fill="currentColor"/></svg></span><span>Humanity <em>Hub</em></span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="poverty.html">Poverty</a></li>
+      <li><a href="war.html">War &amp; Conflict</a></li>
+      <li><a href="climate.html">Climate Change</a></li>
+      <li><a href="cyberbullying.html">Cyberbullying</a></li>
+      <li><a href="mental-health.html" class="active">Mental Health</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact / Resources</a></li>
+      <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode"><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></button></li>
+    </ul>
+  </nav>
+  <div class="page-hero">
+    <span class="tag">05 — Mental Health</span>
+    <h1>Your mind deserves care too</h1>
+    <p class="lead">Anxiety, depression and burnout affect <mark>nearly 1 billion</mark> people. It's okay not to be okay — and it's okay to ask for help.</p>
+  </div>
+</header>
+<main>
+<article class="section accent-mind">
+  <div class="grid-2">
+    <figure class="figure">
+      <img src="../images/mental-health-sunrise.jpg" alt="Calm sunrise over a quiet lake" loading="lazy"/>
+      <figcaption>Rest is productive. Stillness is strength.</figcaption>
+    </figure>
+    <div class="prose">
+      <h3>Anxiety, depression &amp; student stress</h3>
+      <p>Pressure at school, uncertainty about the future and constant connectivity can overwhelm young minds. Recognising the signs is the first step to healing.</p>
+      <h3>Why support matters</h3>
+      <p>No one should face these struggles alone. Friends, family, teachers and professionals can make recovery possible.</p>
+      <div class="breathe">
+        <h4>Breathe with us</h4>
+        <div class="breathe-circle" id="breathe-circle"><span id="breathe-text">Inhale</span></div>
+        <p class="muted">4 seconds in · 4 hold · 4 out</p>
+      </div>
+      <div class="quote-gen">
+        <h4>Need a lift?</h4>
+        <blockquote id="quote-text">"You don't have to control your thoughts. You just have to stop letting them control you." — Dan Millman</blockquote>
+        <button id="quote-btn" class="btn btn-ghost btn-sm">Another quote</button>
+      </div>
+      <details><summary>Not sure where to start? Read this</summary>
+        <ul>
+          <li>Talk to someone you trust.</li>
+          <li>Move your body, even 10 minutes helps.</li>
+          <li>Limit doom-scrolling.</li>
+          <li>If in crisis, call a hotline (see Resources).</li>
+        </ul>
+      </details>
+    </div>
+  </div>
+</article>
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div><div class="brand brand-footer"><span class="brand-mark"><svg viewBox="0 0 32 32" fill="none"><path d="M16 28S4 20 4 12a6 6 0 0 1 12-2 6 6 0 0 1 12 2c0 8-12 16-12 16Z" fill="currentColor"/></svg></span><span>Humanity <em>Hub</em></span></div><p class="muted">A small project, made with a lot of tab-switching between the PDFs and the CSS docs.</p></div>
+    <div><h4>Explore</h4><ul><li><a href="poverty.html">Poverty</a></li><li><a href="war.html">War &amp; Conflict</a></li><li><a href="climate.html">Climate Change</a></li><li><a href="cyberbullying.html">Cyberbullying</a></li><li><a href="mental-health.html">Mental Health</a></li></ul></div>
+    <div><h4>Help</h4><ul><li><a href="contact.html">Resources</a></li><li><a href="contact.html">Contact</a></li><li><a href="about.html">About Us</a></li><li><a href="faq.html">FAQ</a></li><li><a href="testimonials.html">Testimonials</a></li></ul></div>
+  </div>
+  <p class="copyright">© <span id="year"></span> Humanity Hub — made by Anas P.</p>
+</footer>
+<script src="../js/script.js"></script>
+</body>
+</html>
