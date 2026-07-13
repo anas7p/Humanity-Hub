@@ -1,6 +1,3 @@
-/* ===========================================================
-   Humanity Hub — Awareness website
-   =========================================================== */
 :root {
   --bg: #f7f4ee;
   --bg-elev: #ffffff;
@@ -8,10 +5,10 @@
   --ink-soft: #4b5063;
   --muted: #7a7f93;
   --line: #e7e2d6;
-  --primary: #ff5b3a;        /* warm coral */
-  --primary-2: #ffb547;      /* sunlit gold */
-  --accent: #2d6a4f;         /* hopeful green */
-  --accent-2: #1d4ed8;       /* steady blue */
+  --primary: #ff5b3a;        
+  --primary-2: #ffb547;     
+  --accent: #2d6a4f;         
+  --accent-2: #1d4ed8;       
   --danger: #d11149;
   --grad-warm: linear-gradient(135deg, #ff5b3a 0%, #ffb547 100%);
   --grad-cool: linear-gradient(135deg, #1d4ed8 0%, #06b6d4 100%);
@@ -62,7 +59,7 @@ blockquote {
 }
 .muted { color: var(--muted); font-size: .9rem; }
 .center { text-align: center; }
-/* =================== HEADER & HERO =================== */
+/* HEADER & HERO */
 .site-header {
   position: relative;
   overflow: hidden;
@@ -137,12 +134,12 @@ blockquote {
 .hero-stats > div { text-align: center; }
 .hero-stats strong { font-family: 'Fraunces', serif; font-size: 2rem; display: block; background: var(--grad-warm); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .hero-stats span { font-size: .82rem; color: var(--muted); }
-/* page hero (topic pages) */
+/* page hero */
 .page-hero { position: relative; z-index: 2; max-width: var(--maxw); margin: 2.5rem auto 0; padding: 0 1.5rem 1rem; }
 .page-hero .tag { margin-bottom: 1rem; }
 .page-hero h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); }
 .page-hero .lead { max-width: 720px; }
-/* =================== SECTIONS =================== */
+/* SECTIONS */
 .section { max-width: var(--maxw); margin: 0 auto; padding: 4rem 1.5rem; position: relative; }
 .section-head { max-width: 720px; margin-bottom: 3rem; }
 .section-head.center, .stats h2 { text-align: center; margin-left: auto; margin-right: auto; }
