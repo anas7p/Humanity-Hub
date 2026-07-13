@@ -1,6 +1,3 @@
-/* ===========================================================
-   Humanity Hub — site interactions
-   =========================================================== */
 (function () {
   "use strict";
 
@@ -19,13 +16,13 @@
     initFootprintCalculator();
   }
 
-  /* ---------- Footer year ---------- */
+  /* Footer year */
   function setFooterYear() {
     var yearEl = document.getElementById("year");
     if (yearEl) yearEl.textContent = new Date().getFullYear();
   }
 
-  /* ---------- Dark mode toggle ---------- */
+  /* Dark mode toggle */
   function initThemeToggle() {
     var toggle = document.getElementById("theme-toggle");
     var root = document.documentElement;
@@ -50,7 +47,7 @@
     });
   }
 
-  /* ---------- Mobile nav ---------- */
+  /* Mobile nav */
   function initMobileNav() {
     var toggle = document.querySelector(".nav-toggle");
     var links = document.getElementById("nav-links");
@@ -69,7 +66,7 @@
     });
   }
 
-  /* ---------- Animated counters ---------- */
+  /* Animated counters */
   function initCounters() {
     var counters = document.querySelectorAll("[data-counter]");
     if (!counters.length) return;
@@ -111,7 +108,7 @@
     }
   }
 
-  /* ---------- Reveal on scroll ---------- */
+  /* Reveal on scroll */
   function initRevealOnScroll() {
     var items = document.querySelectorAll(".reveal");
     if (!items.length || !("IntersectionObserver" in window)) return;
@@ -130,7 +127,7 @@
     items.forEach(function (el) { observer.observe(el); });
   }
 
-  /* ---------- Contact form ---------- */
+  /* Contact form */
   function initContactForm() {
     var form = document.getElementById("contact-form");
     var status = document.getElementById("form-status");
@@ -161,7 +158,7 @@
     });
   }
 
-  /* ---------- Cyberbullying recognition quiz ---------- */
+  /* Cyberbullying recognition quiz */
   function initCyberQuiz() {
     var qEl = document.getElementById("quiz-q");
     var optsEl = document.getElementById("quiz-options");
@@ -233,13 +230,12 @@
     render();
   }
 
-  /* ---------- Breathing circle ---------- */
+  /* Breathing circle */
   function initBreathingCircle() {
     var circle = document.getElementById("breathe-circle");
     var text = document.getElementById("breathe-text");
     if (!circle || !text) return;
 
-    // Cycle synced to the CSS breathing animation (12s total: 4s in, 4s hold, 4s out)
     var order = ["Inhale", "Hold", "Exhale"];
     var step = 0;
     text.textContent = order[0];
@@ -249,7 +245,7 @@
     }, 4000);
   }
 
-  /* ---------- Quote generator ---------- */
+  /* Quote generator */
   function initQuoteGenerator() {
     var quoteEl = document.getElementById("quote-text");
     var btn = document.getElementById("quote-btn");
@@ -277,7 +273,7 @@
     });
   }
 
-  /* ---------- Carbon footprint estimator ---------- */
+  /* Carbon footprint estimator */
   function initFootprintCalculator() {
     var km = document.getElementById("cf-km");
     var meat = document.getElementById("cf-meat");
@@ -297,10 +293,10 @@
       meatOut.textContent = meatVal + (meatVal === 1 ? " meal" : " meals");
       flightsOut.textContent = flightsVal + (flightsVal === 1 ? " flight" : " flights");
 
-      // Rough estimation formula (illustrative, not scientific):
-      var carTons = (kmVal * 52 * 0.00012);        // ~120g CO2/km, weekly -> yearly
-      var meatTons = (meatVal * 52 * 0.0033);       // ~3.3kg CO2 per meat-heavy meal
-      var flightTons = (flightsVal * 0.9);          // ~0.9 ton CO2 per average flight
+      // Rough estimation formula
+      var carTons = (kmVal * 52 * 0.00012);        
+      var meatTons = (meatVal * 52 * 0.0033);       
+      var flightTons = (flightsVal * 0.9);         
 
       var result = carTons + meatTons + flightTons;
       total.textContent = result.toFixed(1);
